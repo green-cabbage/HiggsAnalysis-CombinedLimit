@@ -5,6 +5,7 @@ kmax *
 # here, bbHtautau and Ztautau is the $PROCESS, $MASS is defined with the -m flag, I think $SYSTEMATIC is automatic, but could be wrong
 shapes Ztautau * datacard_part2.shapes.root signal_region/$PROCESS  signal_region/$PROCESS_$SYSTEMATIC
 shapes bbHtautau * datacard_part2.shapes.root signal_region/$PROCESS$MASS  signal_region/$PROCESS$MASS_$SYSTEMATIC
+shapes data_obs * datacard_part2.shapes.root signal_region/data_obs  
 
 ---------------
 bin bin1
@@ -13,8 +14,8 @@ observation 3416
 bin             bin1       bin1
 process         bbHtautau  Ztautau
 process         0          1
-rate            0.913183   100
+rate            0.913183   742.648993
 --------------------------------
-lumi     lnN    1.10       1.0
-bgnorm   lnN    1.00       1.3
-alpha  shape    -          1
+lumi              lnN    1.10       1.0
+bgnorm            lnN    1.00       1.3
+CMS_eff_t_highpt  shape    -          1
